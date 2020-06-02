@@ -1,0 +1,262 @@
+#description{
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  padding: 10px 100px 0 100px;
+}
+.carousel-over{
+  padding-left: 0!important;
+}
+.description-view{
+  padding-right: 0!important;
+}
+#carousel-custom {
+  left: 0;
+  right: auto;
+  background-image: none !important;
+  background-repeat: repeat-x;
+  padding: 0;
+  margin: 0;
+}
+.img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin:0;
+}
+
+.img-big{
+  display: none;
+}
+
+.current.img-big {
+  display: block !important;
+  width: 100%;
+  height: 495px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+ .carousel-indicators {
+  margin: 0 0;
+  overflow: auto;
+  position: static;
+  text-align: left;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-indicators li {
+  display: unset;
+  border: none!important;
+}
+.first-left-element {
+  margin: 0 !important;
+}
+.second-left-element {
+  margin: 1px !important;
+}
+#carousel-custom .carousel-indicators li .img {
+  display: block;
+}
+#carousel-custom .carousel-indicators li:hover .img {
+  opacity: 0.75;
+}
+#carousel-custom .carousel-indicators div .img {
+  display: block;
+}
+#carousel-custom .carousel-indicators div:hover .img {
+  opacity: 0.75;
+}
+#carousel-custom .carousel-outer {
+  position: relative;
+}
+div#carousel-custom {
+  margin: 0 0 50px;
+}
+/* Left Column */
+.left_img .img {
+  display: none !important;
+  transition: all 0.3s ease;
+}
+.left_img .img.current {
+  display: block !important;
+}
+.carousel-control.left{
+  background-image: none;
+}
+.carousel-control.right{
+  background-image: none;
+} 
+/* Product Color */
+.product-color{
+  padding: 10px 0 5px 20px;
+
+}
+.title-color{
+  font-weight: 600;
+}
+.color-choose > div {
+  display: inline-block;
+  margin: 5px 0 3px 0;
+}
+.color-choose input[type="radio"] {
+  display: none;
+}
+.color-choose input[type="radio"] + label span {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.color-choose input[type="radio"] + label span {
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+}
+.color-choose input[type="radio"]#black + label span {
+  background-color: #151515;
+}
+.color-choose input[type="radio"]#white + label span {
+  background-color: #fff;
+}
+.color-choose input[type="radio"]#blue + label span {
+  background-color: #e2c979;
+}
+.color-choose input[type="radio"]:checked + label span {
+  background-image: url(../img/check-icn.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container-info{
+  height: 650px;
+}
+.information-producto{
+  background-color: #fff;
+}
+.title-description{
+  padding: 1px 10px;
+  
+}
+.description-p{
+  margin-top: 5px;
+  margin-bottom: 5px; 
+}
+.description-producto{
+  padding: 0 30px;
+}
+
+.description{
+  list-style: none;
+  font-size: 15px;
+  padding: 13px 0 0 0;
+}
+.card-carousel{
+  padding: 10px 100px;
+}
+#main {
+  font-family:Arial;
+  display:block;
+  margin:0 auto;
+}
+
+.content-card{
+  width: 150px;
+  height: 320px;
+  background:peru;
+  margin: 50px 10px;
+}
+#main .slick-next, #main .slick-prev{
+  z-index: 1;
+  width: 40px;
+  background-color: black;
+  opacity: 0.5;
+  height: 40px;
+  border-radius: 50%;
+  transition: .3s ease-in-out all;
+  top:50%;
+}
+
+#main .slick-next:before {
+  color: white !important;
+}
+#main .slick-prev:before {
+   color: white !important;
+}
+#main .slick-dots {
+  bottom: 0;
+}
+#main .slick-prev{
+  left: -30px!important;
+}
+#main .slick-next{
+  right: -35px!important;
+}
+.redes-sociales{
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+.redes-comparte{
+  position: absolute;
+  right: 10px;
+}
+.title-comparte{
+  font-weight: 600;
+}
+.list-unstyled {
+  list-style: none;
+}
+.list-inline li {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/*Change icons size here*/
+.social-icons .fa {
+  font-size: 1.8em;
+}
+/*Change icons circle size and color here*/
+.social-icons .fa {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #FFF;
+  color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.social-icons.icon-circle .fa{ 
+  border-radius: 50%;
+}
+.social-icons.icon-rounded .fa{
+  border-radius:5px;
+}
+.social-icons.icon-flat .fa{
+  border-radius: 0;
+}
+.social-icons.icon-rotate .fa:hover, .social-icons.icon-rotate .fa:active { 
+  -webkit-transform: scale(1.1) rotate(360deg);
+  -moz-transform: scale(1.1) rotate(360deg);
+  -ms-transform: scale(1.1) rotate(360deg);
+  -o-transform: scale(1.1) rotate(360deg);
+  transform: scale(1.1) rotate(360deg);
+}
+
+
+.social-icons .fa-facebook,.social-icons .fa-facebook-square{
+  background-color:#3C599F;
+}  

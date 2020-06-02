@@ -1,0 +1,29 @@
+#category{
+	width: 100%;
+	height: auto;
+	padding: 10px 100px;
+}
+.nav-column{
+	list-style: none;
+}
+	.padding-lf{
+	padding-left: 0!important;
+}
+	.padding-ri{
+	padding-right: 0!important;
+}
+	.nav-column li a{
+	color: #000;
+	text-decoration: none;
+}
+.panel-body2{
+	padding: 0;
+}
+.title-marcas{
+	font-size: 20px;
+	margin-top: 0;
+}
+.panel-general a {
+	font-weight: 600;
+	text-decoration: none;
+}

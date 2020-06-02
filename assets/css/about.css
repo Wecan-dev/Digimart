@@ -1,0 +1,44 @@
+#nosotros{
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  padding: 10px 100px;
+  margin-bottom: 20px;
+}
+.nosotros{
+  background-color: #fff;
+  height: 1000px;
+
+}
+.informacion-nosotros{
+	width: 100%;
+	height: auto;
+	padding:10px 80px;
+}
+.image-nosotros{
+	height: 200px;
+	width: 340px;
+}
+.img-nosotros{
+	width: 100%;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.caption-text-n{
+	line-height: 34px;
+	font-size: 18px;
+	text-align: justify;
+}
+.contenedor-images{
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	padding: 0 80px;
+}
+.title-nosotros{
+	font-weight: bold;
+
+}

@@ -1,0 +1,618 @@
+
+@media screen and (max-width: 319px) and (min-width: 0px) {
+  nav{
+    height: auto;
+    padding: 15px 10px 0px 10px;
+  }
+  .container-social-media{
+    display: none;
+  } 
+  .nav>li>a{
+    padding: 10px 7px;
+    font-size: 8px;
+  }
+  .navbar-menu{
+    padding: 0;
+  }
+  .logo img{
+    width: 40%!important;
+  }
+  .slide {
+    padding: 10px 11px;
+  }
+  .open-sans{
+    font-size: 17px;
+  }
+  .catalog-products {
+    padding: 10px 11px;
+  }
+  .category-products {
+    padding: 0 11px 0 11px;
+    margin-top: 0px;
+  }
+
+  #contact {
+    margin-top: 26px;
+    height: 450px;  
+    padding: 0 11px 50px 11px;
+  }
+  .caption-googlem{
+    display: none; 
+  }
+  .input-form, select{
+    margin: 26px 15px 20px 20px;
+    width: 80%;
+    height: 42px;
+    font-size: 10px;
+  }
+  .caption-formulario{
+    padding:0 0 0 17px;
+  }
+  .button-form{
+    font-size: 10px;
+  }
+  .caption-form{
+    height: 400px;
+  }
+  #footer{
+    padding:10px 11px;
+  }
+  .footer{
+    height: auto;
+  }
+  .title-social-f{
+    padding: 20px 0 0 15px!important;
+  }
+  .icon-on{
+    top: 30px;
+    right: 20px;
+  }
+  .social-media-footer{
+    height: 130px;
+  }
+  .social-media-f{
+    left: 40px;
+  }
+  .container-information{
+    height:200px;
+    padding: 20px 0 0 17px;
+  }
+  .caption-text-f{
+    font-size: 12px;
+  }
+  .container-logo{
+    height: 110px;
+  }
+}
+@media screen and (max-width: 539px) and (min-width: 320px) {
+
+  /*navbar de mobile*/
+  #nav-mobile{
+  width: 100%;
+  position: fixed;
+  height: 60px;
+  z-index: 999;
+  bottom: 0;
+  }
+
+  .navbar-nuevo {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+  }
+  .nav-mobile {
+    padding-left: 10px!important;
+    padding-right: 15px;
+  }
+  .icon-mobile{
+    font-size: 20px;
+    margin-left: 5px;
+  }
+
+  .modal-dialog{
+    width: 200px;
+    height: 200px;
+  }
+  .modal-header{
+    width: 100%;
+    height: 200px;
+    padding: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  } 
+  /*end */
+  /*navbar */
+  nav{
+    height: auto;
+    padding: 15px 10px 0px 10px;
+  }
+  .hidden-xs-down{
+    display: none;
+  }
+
+  #header{
+    background-color: #eee;
+  }
+  .search-form .form-group span.form-control-feedback{
+    color: #000;
+  }
+  .container-social-media{
+    display: none;
+  }
+  .logo a{
+    display: flex;
+    justify-content: center;
+  }
+  .logo img{
+    width: 40%!important;
+  }
+  .search-form .form-group:hover input.form-control{
+    border: none;
+    border-bottom: 1px solid #c0c0c0;
+    border-radius: 0 !important;
+  }
+  .navbar-menu{
+    padding: 10px;
+  }
+  .nav>li>a{
+    padding: 10px 18px;
+    margin-left: 10px;  
+  }
+  .small-options{
+    padding-top: 6px;
+  }
+  .search {
+    padding: 0;
+    height: 40px;
+    width: auto;
+  }  
+  .search-form{
+    padding: 0 0 0 0;
+  }
+  .form-group{
+    margin-bottom: 0;
+  }
+  hr{
+    display: none;
+  }
+  /*navbar */
+
+  /*slider */
+  #home-slide{
+    padding-top: 20px;
+  }
+  .slide{
+     padding: 20px 10px 0 10px;
+  }
+  .slick-next, .slick-prev{
+    width: 30px;
+    height: 40px;
+  }
+  /*slider */
+  /*catalogos de productos*/
+  .title-container h2{
+    font-size: 30px;
+  }
+  .catalog-products{
+    padding: 0px 10px 0px 10px;
+  }
+  .caption-products{
+    margin-bottom: 35px;
+  }
+  /*catalogos de productos*/
+  .title-container-category h2{
+    font-size: 30px;
+  }
+  .category-products{
+    padding: 0 10px;
+    margin-top: 0;
+  }
+  .caption-category{
+    margin-top: 36px;
+  }
+  .contenedor-category{
+    height: 300px;
+    z-index: 2;
+  }
+  .img-categories{
+    height: 300px;
+  }
+  .title-container{
+    margin-bottom: 15px;
+  }
+  #contact{
+    height: auto;
+    padding: 0 10px 5px 0;
+  }
+  .title-contact{
+    font-size: 20px;
+  }
+  .caption-formulario{
+    height: 525px;
+    padding: 0 0 0 25px;
+  }
+  .caption-googlem{
+    display: none; 
+  }
+  .input-form, select{
+    margin: 30px 12px 20px 14px;
+  }
+  .button-form{
+    right: 15px;
+  }
+  #footer{
+    height: auto;
+    padding: 10px 10px;
+  }
+  .footer{
+    height: auto;
+  }
+  .social-media-footer{
+    height: 130px;
+  }
+  .title-social-f{
+    padding: 20px 0 0 20px!important;
+  }
+  .icon-on{
+    display: none;
+  }
+  .emojis{
+    width: 10%;
+  }
+  .icon{
+    width: 5%;
+  }
+  .social-f{
+    bottom: 7px;
+  }
+  .container-information{
+    height:160px;
+    padding: 0px 0 0 17px;
+  }
+  .caption-text-f{
+    font-size: 12px;
+  }
+  .container-logo{
+    height: 160px;
+    margin-bottom: 50px;
+  }
+  .logo-empresa img{
+    width: 15%; 
+    left: 68px;
+  }
+  .logo-slice{
+    right: 48px;
+  }
+  #nosotros{
+    height: auto;
+    padding: 30px  10px 0 10px;
+  }
+  .informacion-nosotros{
+    padding: 10px 10px;
+  }
+  .caption-text-n{
+    font-size: 14px;
+  }
+  .title-nosotros{
+    font-size: 20px;
+  }
+  .nosotros{
+    height: auto;
+  }
+  .contenedor-images{
+    padding: 0 20px;
+  }
+
+  .image-nosotros{
+    height: 75px!important;
+    padding: 0 7px;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .img-nosotros{
+    height: 130px;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .search-form .form-group{
+    background-color: #eee;
+  }
+  #products{
+    padding: 10px 10px;
+  }
+  .products{
+    background-color: #fff;
+    height: 1000px;
+  }
+  #sub-category {
+    padding: 45px 10px;
+  }
+  .carousel{
+    height: 300px;
+
+  }
+  .slick-slide img{
+    height: 300px;
+  }
+  .slide-carousel{
+    padding: 0 0 0 0!important;
+  } 
+  .description-producto{
+    height: 472px;
+  }
+  .img-carousel-small{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #home-slide3 > #box-slide > .single-item3 .slick-prev{
+    top: 50px!important;
+  }
+  #home-slide3 > #box-slide > .single-item3 .slick-next{
+    top: 50px!important;
+  }
+  #home-slide3 > #box-slide > .single-item3 .slick-list .draggable{
+    height: 100px;
+  }
+  #products{
+    margin-top: 30px; 
+  }
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 540px) {
+  nav{
+    height: auto;
+    padding: 20px 20px;
+  }
+  .navbar-menu{
+    padding: 0;
+  }
+  .logo img{
+    width: 50%!important;
+  } 
+  .dropdown-menu-large .dropdown-header {
+    color: #000;
+    font-size: 14px;
+  }
+  .slide{
+    padding: 10px 20px;
+  }
+  .catalog-products{
+    padding: 10px 20px;
+  }
+  .title-container h2{
+    font-size: 45px;    
+  }
+  .category-products{
+    padding: 0 20px;
+  }
+  .title-container-category h2{
+    font-size: 45px;
+  }
+  #contact{
+    height: auto;
+    padding: 0 19px 0 0;
+  }
+  .input-form, select{
+    margin: 30px 15px 20px 20px;
+  }
+  .caption-googlem{
+    padding: 0 0 0 34px;
+  }
+  #footer{
+    padding: 0 20px;
+  }
+  .caption-description-f{
+    padding: 0 0 0 20px;
+  }
+  .title-social-f{
+    padding: 20px 0 0 20px!important;
+  }
+  .icon-on{
+    top: 30px;
+    right: 30px;
+  }
+   .emojis{
+    width: 10%;
+  }
+  .icon{
+    width: 5%;
+  }
+  .social-media-f{
+    left: 28px;
+  }
+  .social-f{
+    left: 62px;
+  }
+  .container-information{
+    padding: 16px 0 0 27px;
+    
+  }
+  .logo-f{
+    width: 179px;
+    bottom: 20px;
+  }
+  .logo-slice{
+    right: 20px;
+  }
+  
+  .caption-text-f{
+    font-size: 10px!important;
+  }
+  .text-powered{
+    width: 65px!important;
+    font-size: 12px;
+  }
+  .logo-f img{
+    width: 26%;
+  }
+  .text-fecha{
+    width: 40px;
+  }
+  #nosotros{
+     padding: 10px 20px;
+  }
+  .informacion-nosotros{
+    padding: 10px 20px;
+  }
+  .caption-text-n{
+    font-size: 16px;
+  }
+  .title-nosotros{
+    font-size: 25px;
+  }
+  .image-nosotros{
+    padding: 0 45px;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+   #products{
+    padding: 10px 20px;
+  }
+  #sub-category{
+    padding: 10px 20px;
+  }
+  
+}
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  nav{
+    padding: 30px 15px;
+    height: 150px;
+  }
+  
+  .search-form .form-group input.form-control{
+    font-size: 10px;
+  }
+  .slide{
+  	padding: 4px 18px;
+  }
+  .catalog-products{
+  	padding: 4px 18px;
+  }
+  .category-products{
+  	padding: 0 18px 0 18px;
+  }
+  #contact{
+  	padding: 0 18px 10px 18px;
+  }
+  #footer{
+  	padding: 0 17px;
+  }
+
+  .title-social-f{
+    padding: 20px 0 0 25px;
+  }
+  .icon-on {
+    width: 7%;
+    position: absolute;
+    top: 30px;
+  }
+  .container-information{
+    padding: 20px 0 0 20px;
+  }
+  .emojis {
+    width: 7%;
+  }
+  .icon {
+    width: 5%;
+  }
+  .title-information-f{
+  	font-size: 14px;
+  }
+  .caption-text-f{
+  	font-size: 11px;
+    width: 300px;
+  }
+  .logo-empresa img {
+    width: 20%;
+  }
+  .logo-slice{
+    right: 60px;
+  }
+  #nosotros{
+    padding: 10px 20px;
+  }
+  .nosotros{
+    height: 1000px;
+  }
+  
+  .contenedor-images{
+    padding: 0 10px;
+  }
+  .informacion-nosotros{
+    padding: 25px 35px;
+  }
+  .
+  .title-nosotros{
+    font-size: 30px;
+    margin-top: 35px;
+  }
+
+  .image-nosotros{
+    padding: 0 45px;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  /* view Productos*/
+  #products{
+    padding: 10px 15px;
+  }
+
+  /* view Subcategorias*/
+  #sub-category{
+    padding: 10px 20px;
+  }
+  #description{
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  padding: 10px 20px 0 20px;
+  margin-bottom: -20px;
+  }
+  .caption-description-f {
+    padding: 0 0 0 25px;
+    
+  }
+
+}
+
+
+
+@media screen and (max-width: 1290px) and (min-width: 1025px) {
+  .nosotros{
+    height: 980px;
+  }
+  .title-social-f{
+    padding: 10px 0 0 10px!important;
+  }
+}
+@media screen and (max-width: 1420px) and (min-width: 1291px) {
+  .nosotros{
+    height: 980px;
+  }
+  
+}
+@media screen and (max-width: 3000px) and (min-width: 1420px) {
+  .nosotros{
+    height: 980px;
+  }
+   .title-social-f{
+    padding: 30px 0 0 30px!important;
+  }
+  .icon-on{
+    top: 40px;
+  }
+
+  
+}
