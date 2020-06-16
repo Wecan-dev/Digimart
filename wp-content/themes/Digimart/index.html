@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/about.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/products.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/sub-category.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+</head>
+<body>
+  <!-- Modal -->
+  <div class="modal fade" id="modal-digimart" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-header" style="background-image: url('assets/img/pop up.jpg');">
+        <div class="mask-modal"></div>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>    
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid header hvr-shadow">
+      <header id="header" class="">
+        <div class="padding__general main-navbar__contentop "> 
+          <div class="logo">
+            <a href="index.html"><img src="assets/img/logo-digimart-negro.png" alt="Digimart"></a>
+          </div>
+          <div class=" container-social-media">
+            <div class="social-media">
+              <a href="https://www.facebook.com/digimartvzla" title=""><i class="fa fa-facebook icon-social" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/DigimartVzla" title=""><i class="fa fa-twitter icon-social" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/digimartvzla/" title=""><i class="fa fa-instagram icon-social" aria-hidden="true"></i></a>
+            </div>
+          </div>  
+         
+        </div>
+      </header><!-- /header -->
+      <hr>
+      <div class="container-nav">
+        <div class=" padding__general main-navbar__contentop ">
+          <div class="  navbar-menu hidden-xs-down">
+            <ul class="nav ">
+              <li class="nav-item">
+                <a class="nav-link active hvr-overline-nav" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hvr-overline-nav" href="about.html">Nosotros</a>
+              </li>
+              <li class="nav-item dropdown dropdown-large">
+                <a href="#" class="dropdown-toggle nav-link hvr-overline-nav" data-toggle="dropdown">Productos</a>
+                <ul class="dropdown-menu dropdown-menu-large row">
+                  <li class="col-sm-2">
+                    <ul>
+                      <li class="dropdown-header">Celulares</li>
+                      <li><a href="sub-category.html">Teléfonos inteligentes</a></li>
+                      <li><a href="sub-category.html">Teléfonos Básicos</a></li>
+                      <li><a href="sub-category.html">Accesorios</a></li>
+                      <li class="divider"></li>
+                      <li class="dropdown-header">Tablets y relojes</li>
+                      <li><a href="sub-category.html">Tablets</a></li>
+                      <li><a href="sub-category.html">Relojes inteligentes</a></li>
+                      <li><a href="sub-category.html">Accesorios</a></li>              
+                    </ul>
+                  </li>
+                  <li class="col-sm-2">
+                    <ul>
+                      <li class="dropdown-header">Computación</li>
+                      <li><a href="sub-category.html">Computadoras</a></li>
+                      <li><a href="sub-category.html">Complementos</a></li>
+                      <li><a href="sub-category.html">Almacenamiento</a></li>
+                      <li><a href="sub-category.html">Accesorios</a></li>
+                      <li class="divider"></li>
+                      <li class="dropdown-header">Tv y video</li>
+                      <li><a href="sub-category.html">TVs</a></li>
+                      <li><a href="sub-category.html">Audio y video tvs</a></li>
+                      <li><a href="sub-category.html">Accesorios</a></li>
+                    </ul>
+                  </li>
+                  <li class="col-sm-2">
+                    <ul>
+                      <li class="dropdown-header">Audio</li>
+                      <li><a href="sub-category.html">Audifonos</a></li>
+                      <li><a href="sub-category.html">Sonidos y parlantes</a></li>
+                      <li><a href="sub-category.html">Audio vehículos</a></li>
+                      <li><a href="sub-category.html">Accesorios</a></li>
+                      <li class="divider"></li>
+                      <li class="dropdown-header">Videojuegos</li>
+                      <li><a href="sub-category.html">Consolas</a></li>
+                      <li><a href="sub-category.html">Juegos</a></li>
+                      <li><a href="sub-category.html">Accesorios</a></li>
+                    </ul>
+                  </li>
+                  <li class="col-sm-2">
+                    <ul>
+                      <li class="dropdown-header">Cámaras</li>
+                      <li><a href="sub-category.html">Cámaras digitales</a></li>
+                      <li><a href="sub-category.html">Videocámaras</a></li>
+                      <li><a href="sub-category.html">Cámaras de seguridad</a></li>
+                      <li><a href="sub-category.html">Accesorios</a></li>
+                    </ul>
+                  </li>
+                  <li class="col-sm-2">
+                    <ul>
+                      <li class="dropdown-header"> Drones,Radiocontrol</li>
+                      <li><a href="sub-category.html">Drones y radiocontrol</a></li>
+                      <li><a href="sub-category.html">Juguetes</a></li>
+
+                      
+                    </ul>
+                  </li>
+                  <li class="col-sm-2">
+                    <ul>
+                      <li class="dropdown-header"><a href="sub-category.html">Otros</a></li>
+                      <li class="dropdown-header"><a href="sub-category.html">Ver Más Categorias</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hvr-overline-nav" href="#contact">Contacto</a>
+              </li>
+            </ul>
+            
+          </div><!-- /navbar menu -->
+          <div class=" small-options " >
+            <div class="search">
+              <form action="" class="search-form">
+                <div class="form-group has-feedback">
+                  <label for="search" class="sr-only"></label>
+                  <input type="text" class="form-control" name="search" id="search" placeholder="Busca nuestros productos">
+                  <button type="" class="form-control-feedback">
+                    <span class="glyphicon glyphicon-search "></span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  <section class="padding__general" id=" ">
+    <div class="home-slide">
+      <div id="box-slide" class="hvr-grow-shadow">
+        <div class="single-item">
+          <div class="box-slide-item">
+            <div class="banner-carousel" style="background-image: url('assets/img/camera_2.jpeg');">
+              <div class="box-slide-mask">
+                <div class="caption-carousel">
+                  <h2 class="open-sans">Digimart</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-slide-item">
+            <div class="banner-carousel" style="background-image: url('assets/img/Android_1.jpeg');">
+            <div class="box-slide-mask">
+              <div class="caption-carousel">
+                <h2 class="open-sans">Digimart 1</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-slide-item">
+          <div  class="banner-carousel" style="background-image: url('assets/img/desktop_2.jpeg');">
+            <div class="box-slide-mask">
+              <div class="caption-carousel">
+                <h2 class="open-sans">Digimart 2</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-slide-item">
+        <div  class="banner-carousel" style="background-image: url('assets/img/drone_1.jpg');">
+          <div class="box-slide-mask">
+            <div class="caption-carousel">
+              <h2 class="open-sans">Digimart 3</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box-slide-item">
+      <div  class="banner-carousel" style="background-image: url('assets/img/desktop_2.jpeg');">
+        <div class="box-slide-mask">
+          <div class="caption-carousel">
+            <h2 class="open-sans">Digimart 2</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box-slide-item">
+    <div class="banner-carousel" style="background-image: url('assets/img/drone_1.jpg');">
+      <div class="box-slide-mask">
+        <div class="caption-carousel">
+          <h2 class="open-sans">Digimart 3</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>  
+<section class="padding__general ">
+  <div class="title-container">
+    <h2 class="open-sans ">Productos</h2>
+  </div>
+  <div class="main-products__grid--content">
+
+    <a href="product.html" class="contenedor-a">
+      <div class="card hvr-shadow-p">
+        <div class="card-img">
+          <div class="img-products__home" style="background-image: url('assets/img/iphone.png');"></div>
+        </div>
+        <div class="card-content">
+          <div class="caption-title">
+            <h5 class="open-sans title-product">Samsung J2 prime</h5>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="product.html" class="contenedor-a">
+      <div class="card hvr-shadow-p">
+        <div class="card-img">
+          <div class="img-products__home" style="background-image: url('assets/img/smartwatch.png');"></div>
+        </div>
+        <div class="card-content">
+          <div class="caption-title">
+            <h5 class="open-sans title-product">Smartwatch</h5>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="product.html" class="contenedor-a">
+      <div class="card hvr-shadow-p">
+        <div class="card-img">
+          <div class="img-products__home" style="background-image: url('assets/img/camara.png');"></div>
+        </div>
+        <div class="card-content">
+          <div class="caption-title">
+            <h5 class="open-sans title-product">Cannon 3000 lens</h5>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="product.html" class="contenedor-a">
+      <div class="card hvr-shadow-p">
+        <div class="card-img">
+          <div class="img-products__home" style="background-image: url('assets/img/xboxone.png');"></div>
+        </div>
+        <div class="card-content">
+          <div class="caption-title">
+            <h5 class="open-sans title-product">PlayStation 3</h5>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="product.html" class="contenedor-a">
+      <div class="card hvr-shadow-p">
+        <div class="card-img">
+          <div class="img-products__home" style="background-image: url('assets/img/drone.png');"></div>
+        </div>
+        <div class="card-content">
+          <div class="caption-title">
+            <h5 class="open-sans title-product">Drone</h5>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="product.html" class="contenedor-a">
+      <div class="card hvr-shadow-p">
+        <div class="card-img">
+          <div class="img-products__home" style="background-image: url('assets/img/laptop.png');">
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="caption-title">
+            <h5 class="open-sans title-product">MacBook Pro Desktop</h5>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="product.html" class="contenedor-a">
+      <div class="card hvr-shadow-p">
+        <div class="card-img">
+          <div class="img-products__home" style="background-image: url('assets/img/audifonos.png');">
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="caption-title">
+            <h5 class="open-sans title-product">Audifonos</h5>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="product.html" class="contenedor-a">
+      <div class="card hvr-shadow-p">
+        <div class="card-img">
+          <div class="img-products__home" style="background-image: url('assets/img/laptop.png');">
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="caption-title">
+            <h5 class="open-sans title-product">Pro Desktop</h5>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+</section>
+
+<section class="category-products padding__general ">
+  <div class="container-fluid padd-no">
+    <div class="title-container-category">
+      <h2 class="open-sans">Categorías</h2>
+    </div>
+    <div class="main-content__categories">
+      <div class=" caption-category ">
+        <a href="sub-category.html">
+          <div class="contenedor-category hvr-grow-shadow">
+            <div class="img-categories" style="background-image: url('assets/img/Android_1.jpeg');">
+            </div>
+            <p class=" parrafo-hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="caption-text-category hvr-border-fade ">
+              <h3 class="text-category">Celulares</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class=" caption-category">
+        <a href="sub-category.html" class="contenedor-a">
+          <div class="contenedor-category hvr-grow-shadow">
+            <div class="img-categories" style="background-image: url('assets/img/laptop_1.jpg');">
+            </div>
+            <p class=" parrafo-hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="caption-text-category hvr-border-fade">
+              <h3 class="text-category">Computación</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class=" caption-category ">
+        <a href="sub-category.html" class="contenedor-a">
+          <div class="contenedor-category hvr-grow-shadow">
+            <div class="img-categories" style="background-image: url('assets/img/earphones_1.jpeg');">
+            </div>
+            <p class=" parrafo-hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="caption-text-category hvr-border-fade">
+              <h3 class="text-category">Audio</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="caption-category ">
+        <a href="sub-category.html" class="contenedor-a">
+          <div class="contenedor-category hvr-grow-shadow">
+            <div class="img-categories" style="background-image: url('assets/img/camera_2.jpeg');">
+            </div>
+            <p class=" parrafo-hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="caption-text-category hvr-border-fade">
+              <h3 class="text-category">Cámaras</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>        
+  </div>
+</section>
+
+<section class="main-contact padding__general">
+  <div class="main-contact__content">
+    <div class="main-contact__ubicacion">
+     <div class="caption-maps hvr-shadow">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3907.484068996557!2d-70.2065467!3d11.6600665!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e85edc7e5cc46b3%3A0xa51c44560e6fee39!2sCentro+Comercial+y+Recreacional+Las+Virtudes!5e0!3m2!1ses-419!2sve!4v1519936127158"  height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="main-contact__form">
+    <div class="caption-form hvr-shadow">
+      <div class="container-form">
+        <div class="title-contacts">
+          <h3 class="open-sans title-contact">Subscríbete al newsletter</h3>
+        </div>
+        <div class="campos">
+          <input class="input-form" placeholder="Nombre y Apellido" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre y Apellido'" />
+        </div>
+        <div class="campos">
+          <input class="input-form" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" />
+        </div>
+        <div class="campos">
+          <input class="input-form" placeholder="Teléfono" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Teléfono'" />
+        </div>
+        <div class="campos">
+         <textarea class="form-mensaje input-form" placeholder="Mensaje" rows="5" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mensaje'"></textarea>
+       </div>
+       <div class="campos">
+        <button class="button-form hvr-button" type="submit">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<footer class="main-end padding__general">
+  <div class="main-end__content">
+    <div class="main-logo__end">
+      <div class="main-logo__img">
+        <img class="img-logo-amarillo" src="assets/img/logo-digimart-amarillo.png" alt="">
+      </div>
+      <div class="description-footer" >
+        <p>Somos tu partner tecnológico</p>
+      </div>
+    </div>
+    <div class="main-end__categoria">
+      <div class="main-categoria__end--title">
+        <p class="title-end__categoria">
+          Categoria
+        </p>
+      </div>
+      <div class="main-end__categoria--list">
+       <ul class="list-sitemap" >
+        <li>
+          <a class="opciones-sitemap" href="">Celulares</a>
+        </li>
+        <li>
+          <a class="opciones-sitemap" href="">Tablets y relojes</a>
+        </li>
+        <li>
+          <a class="opciones-sitemap" href="">Computación</a>
+        </li>
+        <li>
+          <a class="opciones-sitemap" href="">Tvs Video</a>
+        </li>
+        <li>
+          <a class="opciones-sitemap" href="">Audio</a>
+        </li>
+        <li>
+          <a class="opciones-sitemap" href="">Videojuegos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="main-end__contactos">
+   <div class="information-f" >
+    <div class="description-f"> 
+      <h4 class="title-information-f">Visítanos</h4>
+      <img class="emojis" src="assets/img/Artboard 5.svg" alt="" >
+      <p class="caption-text-f">C.C. las Virtudes, Planta baja, Local H-15,
+      Punto Fijo, Estado Falcón Venezuela.</p>
+
+    </div>
+    <div class="description-f">
+      <h4 class="title-information-f">Escríbenos</h4>
+      <img class="icon" src="assets/img/Artboard 3.svg" alt="" >
+      <p class="caption-text-f">contacto@digimartvzla.com</p>
+    </div>
+    <div  class="description-f">
+      <h4 class="title-information-f">Llámanos</h4>
+      <img class="icon" src="assets/img/Artboard 6.svg" alt="">
+      <p class="caption-text-f">+58 412-4274052</p>
+      <p class="caption-text-f">0269-2485765</p>
+    </div>
+  </div>
+</div>
+</div>
+<hr class="linea-footer">
+<div class="redes-footer">
+  <div class="social-f">
+    <a href="https://www.facebook.com/digimartvzla/"><i class="fa fa-facebook icon-footer" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/DigimartVzla"><i class="fa fa-twitter icon-footer" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/digimartve/"><i class="fa fa-instagram icon-footer" aria-hidden="true"></i></a>
+  </div>
+</div>
+<div class="logo-slice">
+  <p class="text-powered">Powered By</p>
+  <a href="" class="empresa">SliceGroup</a>
+  <p class="fecha-f">2018</p>
+</div>
+</footer>
+
+<section id="nav-mobile">
+  <div class="nav-mobile">
+    <div class="navbar-nuevo visible-xs">
+      <ul class="nav nav-nuevo ">
+        <li class="nav-item">
+          <a class="nav-link-nuevo active" href="index.html"><i class="fa fa-home icon-mobile" aria-hidden="true"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link-nuevo" href="about.html"><i class="fa fa-users icon-mobile" aria-hidden="true"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link-nuevo" href="product.html"><i class="fa fa-tablet icon-mobile" aria-hidden="true"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link-nuevo" href="#contact"><i class="fa fa-envelope icon-mobile" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </div>  
+  </div>
+</section>
+
+<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="assets/js/slick.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script src="assets/js/main.js"></script>
+<script >
+  $("a").click(function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 50
+      }, 1500, function(){
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $('#modal-digimart').modal('toggle')
+
+</script>
+</body>
+</html>
