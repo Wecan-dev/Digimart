@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
   // $(".box-slide").slick({
   //   dots: true,
@@ -57,7 +55,7 @@ $(document).ready(function(){
   $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     fade: true,
 
     asNavFor: '.slider-nav2',
@@ -68,7 +66,7 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        arrows: true,
+        arrows: false,
         
       }
     },
@@ -107,7 +105,7 @@ $(document).ready(function(){
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         vertical: false,
 
         
@@ -176,8 +174,8 @@ $(document).ready(function(){
    {
     breakpoint: 1024,
     settings: {
-      slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToShow: 1,
+      slidesToScroll: 1,
       infinite: true,
       dots: true
     }
@@ -185,8 +183,8 @@ $(document).ready(function(){
   {
     breakpoint: 600,
     settings: {
-      slidesToShow: 2,
-      slidesToScroll: 2,
+      slidesToShow: 1,
+      slidesToScroll: 1,
     }
   },
   {
@@ -223,4 +221,18 @@ $('.btn-drop').click(function(){
   $(this).siblings('.dropdown-item__desktop').addClass('visibleDesktop')
   $('.dropdown-item__mobile').removeClass('visibleMobile')
   $(this).siblings('.dropdown-item__mobile').addClass('visibleMobile')
+})
+
+
+$('.panel-heading--first').click(function(){
+  $('.panel-collapse').removeClass('in');
+  $(this).siblings('.collapse').toggleClass('in')
+$('.panel-heading').removeClass('active');
+  $(this).toggleClass('active')
+})
+$('.panel-heading--two').click(function(){
+  $('.collapse-close').removeClass('in--sub');
+  $(this).siblings('.collapse-close').toggleClass('in--sub')
+$('.panel-heading').removeClass('active');
+  $(this).toggleClass('active')
 })

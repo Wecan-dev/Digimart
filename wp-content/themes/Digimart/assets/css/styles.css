@@ -1,4 +1,3 @@
-
 body{
   background-color: #eee;
   font-family: 'Noto Sans',sans-serif;
@@ -16,6 +15,17 @@ body{
 }
 .dropdown-item__mobile{
   display: none;
+}
+
+.navbar-responsive{
+	display:none;
+}
+.dropdown-menu{
+	    left: 9rem !important;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: transparent !important;
+    border-color: #337ab7;
 }
 /*************
     MODAL PROMOCIONES
@@ -175,9 +185,11 @@ body{
     display: flex;
     font-family: 'Noto Sans', sans-serif;
   }
-
+.logo a:nth-child(2){
+	display: none;
+}
   .logo a img{
-    width: 60%;
+    width: 40%;
   }
   .img-logo-amarillo{
     width: 60%;
@@ -300,7 +312,7 @@ body{
     border:0!important;
   }
   .dropdown-toggle:hover, .dropdown-toggle:focus, .dropdown-toggle:visited {
-    background-color:#fee413 !important;
+    background-color:transparent !important;
     color: #000;
   }
   .dropdown-large {
@@ -653,7 +665,7 @@ body{
   }
   .caption-text-category {
     color: #fff;
-    width: 200px;
+    width: 230px;
     height: 48px;
     position: absolute;
     bottom: 20px;
@@ -1159,12 +1171,110 @@ input[type="number"]:focus,select:focus,.input-form:focus{
   color: #2f2c18;
   font-weight: bold;
 }
+.title__products__general{
+	  display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.title__products__general p{
+	padding-right: 10px;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+h2.title-marcas{
+	    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.main-category {
+	padding-bottom: 4rem !important;
+	padding-top: 3rem !important;
+}
+.product-color{
+	display:none;
+}
 @media screen and (max-width: 767px) and (min-width: 0px) {
+	.caption-carousel h2{
+		text-align: center;
+	}
+	.description-producto {
+    padding: 0 15px !important;
+}
+	.title__products__general{
+
+    align-items: center;
+		flex-direction: column;
+}
+	.card-content {
+    height: 130px;
+
+}
+	.caption-title{
+		padding:0;
+	}
+	.main-category{
+		padding-bottom: 5rem !important;
+	}
+	.search-form .form-group button.form-control-feedback{
+		    height: 40px !important;
+	}
+	.has-feedback input {
+		height: 40px !important;
+	}
+	nav{
+		height: 90px !important;
+	}
+	.navbar-responsive{
+	display:inherit;
+}
+	.search-form .form-group input.form-control{
+		    background: white;
+		    font-size: 14px;
+	}
+	.search-form .form-group button.form-control-feedback{
+		    border-left: 1px solid #fee539;
+		    background-color: #fee539;
+		    color: black;
+	}
+	.search-form {
+    padding: 20px 0 60px 0 !important;
+}
+	.nav>li {
+    padding: 20px 0 0 0;
+}
+	.nav-item:nth-child(1) {
+     padding: 30px 0 0 0;
+}
+	.navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a {
+    padding: 10px 15px 5px 25px;
+}
+	#header {
+    background-color: #fee413 !important;
+}
+	.navbar-toggle .icon-bar {
+    display: block;
+    width: 30px !important;
+    height: 3px !important;
+    border-radius: 1px;
+    background-color: #000 !important;
+}
+	ul.nav {
+		display: block;
+	}
+	.container-social-media{
+		padding-top:0px;
+	}
+	.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 6px !important;
+}
   .padding__general{
     padding: 0 1rem;
   }
   .main-navbar__contentop{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .search-form .form-group, .search-form .form-group.hover{
     width: 100%;
@@ -1196,13 +1306,16 @@ input[type="number"]:focus,select:focus,.input-form:focus{
     font-size: 45px;
   }
   .title-container h2 {
-    font-size: 45px;
+    font-size: 35px;
   }
 
   .main-end__categoria,.main-end__contactos,.description-footer{
     text-align: center;
     margin-bottom: 1rem;
   }
+	.text-powered, .empresa, .fecha-f{
+		font-size:10px;
+	}
 
   .main-logo__img{
     display: flex;
@@ -1212,9 +1325,7 @@ input[type="number"]:focus,select:focus,.input-form:focus{
   .img-logo-amarillo {
     width: 90%;
   }
-  footer{
-    margin-bottom: 3rem;
-  }
+  
   .description-f{
     width: 100%;
   }
@@ -1231,18 +1342,82 @@ input[type="number"]:focus,select:focus,.input-form:focus{
     transition: 0.3s ease-in-out;
   }
   .visibleMobile{
-    display: block;
+    display: flex;
     transition: 0.3s ease-in-out;
 
   }
   .dropdown-item__desktop{
     display: none;
   }
-  
+	.products__home{
+		padding-top: 2rem;
+	}
+	.container-nav, .social-media{
+		display:none;
+	}
+	.navbar-toggle{
+		padding-right:0px !important;
+	}
+	.nav-link:hover, ..hvr-overline-nav:before{
+		background-color: transparent !important;
+	}
+	.caption-title a {
+		color: #000;
+		font-size: 14px;
+		padding: 12px;
+		   
+	}
+	.nav-link:hover {
+    color: #000;
+    background-color: transparent!important;
+}
+	.hvr-overline-nav:before{
+		background: transparent !important;
+	}
+	
+	.description-producto {
+    padding: 0 10px;
+}
+
+	.navbar{
+		position: fixed; 
+		top: 0;
+		height: 30px !important;
+	}
+	.title-contact{
+		padding-left: 25px;
+	}
+	.logo a:nth-child(2){
+		display: inherit;
+	}
+	.logo a:nth-child(1){
+		display: none;
+	}
+	.dropdown__btn{
+		bottom: 0px !important;
+	}
 }
 
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
+	.nav>li>a{
+		font-size: 12px !important;
+	}
+	.card-content {
+    position: relative;
+	}
+	.caption-title{
+		padding: 0;
+	}
+	.selec-product{
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.main-category__content {
+    display: grid;
+    grid-template-columns: 30% 70% !important;
+    padding-top: 30px;
+}
   .padding__general {
     padding: 0 4rem;
   }
@@ -1266,6 +1441,9 @@ input[type="number"]:focus,select:focus,.input-form:focus{
 }
 
 @media screen and (max-width: 1199px) and (min-width:992px) {
+	.caption-title{
+		padding:  0;
+	}
   .padding__general {
     padding: 0 4rem;
   }
@@ -1288,6 +1466,9 @@ input[type="number"]:focus,select:focus,.input-form:focus{
     height: 51px;
     position: relative;
   }
+	.nav>li>a{
+		font-size: 14px;
+	}
 }
 
 .main-category__content{
@@ -1310,6 +1491,11 @@ input[type="number"]:focus,select:focus,.input-form:focus{
   text-decoration: none;
   color: #d6be16;
   transition: 0.3s ease-in-out;
+}
+
+.dropdown-item__mobile a{
+	font-weight: 700;
+	color: #000;
 }
 .caption-title a{
   color: #000;
@@ -1406,8 +1592,9 @@ input[type="number"]:focus,select:focus,.input-form:focus{
 .dropdown__btn a{
   font-family: 'Open-sans', sans-serif;
   /* font-weight: bold; */
-  text-transform: capitalize;
+  text-transform: normal;
   color: #000;
+	text-align: center;
 }
 
 .dropdown__btn a:hover{
@@ -1421,4 +1608,15 @@ input[type="number"]:focus,select:focus,.input-form:focus{
 
 .dropdown-menu-large li ul{
   width: 33% !important;
+}
+
+.collapse-close{
+	display:none;
+}
+
+.collapse-close.in--sub{
+	    display: block;
+}
+#description{
+	padding-bottom: 4rem;
 }

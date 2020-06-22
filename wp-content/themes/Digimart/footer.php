@@ -46,20 +46,20 @@
    <div class="information-f" >
     <div class="description-f"> 
       <h4 class="title-information-f">Visítanos</h4>
-      <img class="emojis" src="<?php echo get_template_directory_uri();?>/assets/img/Artboard 5.svg" alt="" >
+      
       <br>
       <a href="<?php the_field('google_maps_sitio') ?>" class="caption-text-f"><?php the_field('direccion') ?></a>
 
     </div>
     <div class="description-f">
       <h4 class="title-information-f">Escríbenos</h4>
-      <img class="icon" src="<?php echo get_template_directory_uri();?>/assets/img/Artboard 3.svg" alt="" >
+     
       <br>
       <a href="mailto:<?php the_field('correo') ?>" class="caption-text-f"><?php the_field('correo') ?></a>
     </div>
     <div  class="description-f">
       <h4 class="title-information-f">Llámanos</h4>
-      <img class="icon" src="<?php echo get_template_directory_uri();?>/assets/img/Artboard 6.svg" alt="" >
+      
       <br>
       <a href="http://api.whatsapp.com/send?phone=<?php the_field('telefono_movil') ?>" class="caption-text-f">+ <?php the_field('telefono_movil') ?></a>
       <a href="tel:<?php the_field('telefono_local') ?>" class="caption-text-f"><?php the_field('telefono_local') ?></a>

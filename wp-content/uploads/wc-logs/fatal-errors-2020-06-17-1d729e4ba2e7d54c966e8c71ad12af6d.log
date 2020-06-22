@@ -1,0 +1,21 @@
+2020-06-17T19:21:13+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on null in /var/www/html/Digimart/wp-content/themes/Digimart/woocommerce/archive-product.php:20
+Stack trace:
+#0 /var/www/html/Digimart/wp-content/plugins/woocommerce/includes/wc-core-functions.php(251): include()
+#1 /var/www/html/Digimart/wp-content/themes/Digimart/search.php(88): wc_get_template('archive-product...')
+#2 /var/www/html/Digimart/wp-includes/template-loader.php(106): include('/var/www/html/D...')
+#3 /var/www/html/Digimart/wp-blog-header.php(19): require_once('/var/www/html/D...')
+#4 /var/www/html/Digimart/index.php(17): require('/var/www/html/D...')
+#5 {main}
+  thrown in /var/www/html/Digimart/wp-content/themes/Digimart/woocommerce/archive-product.php on line 20
+
+2020-06-17T19:30:34+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on string in /var/www/html/Digimart/wp-content/themes/Digimart/woocommerce/content-single-product.php:44
+Stack trace:
+#0 /var/www/html/Digimart/wp-includes/template.php(725): require()
+#1 /var/www/html/Digimart/wp-content/plugins/woocommerce/includes/wc-core-functions.php(197): load_template('/var/www/html/D...', false)
+#2 /var/www/html/Digimart/wp-content/themes/Digimart/woocommerce/single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Digimart/wp-includes/template-loader.php(106): include('/var/www/html/D...')
+#4 /var/www/html/Digimart/wp-blog-header.php(19): require_once('/var/www/html/D...')
+#5 /var/www/html/Digimart/index.php(17): require('/var/www/html/D...')
+#6 {main}
+  thrown in /var/www/html/Digimart/wp-content/themes/Digimart/woocommerce/content-single-product.php on line 44
+

@@ -16,6 +16,7 @@
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/assets/css/products.css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/assets/css/sub-category.css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/assets/css/responsive.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri();?>/assets/img/favicon-32x32.png">
 <?php wp_head(); ?>
 </head>
 <body>
@@ -39,7 +40,8 @@
       <header id="header" class="">
         <div class="padding__general main-navbar__contentop "> 
           <div class="logo">
-            <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/logo-digimart-negro.png" alt="Digimart"></a>
+            <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/logo-digimart.png" alt="Digimart"></a>
+			<a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/logo-digimart-negro.png" alt="Digimart"></a>
           </div>
           <div class=" container-social-media">
             <div class="social-media">
@@ -47,11 +49,57 @@
               <a href="https://twitter.com/DigimartVzla" title=""><i class="fa fa-twitter icon-social" aria-hidden="true"></i></a>
               <a href="https://www.instagram.com/digimartvzla/" title=""><i class="fa fa-instagram icon-social" aria-hidden="true"></i></a>
             </div>
+			  <div>
+					   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+			  </div>
           </div>  
          
         </div>
       </header><!-- /header -->
       <hr>
+		
+		<div class="navbar-responsive">
+			
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+         <li class="nav-item">
+			<a class="nav-link active hvr-overline-nav" href="<?php bloginfo('url'); ?>">Inicio</a>
+		  </li>
+		  <li class="nav-item">
+			  <a class="nav-link hvr-overline-nav" href="<?php bloginfo('url'); ?>/about">Nosotros</a>
+		  </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categoría de Productos <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+			  <?php $wcatTerms = get_terms('product_cat', array('hide_empty' => 0, 'parent' =>0)); 
+      foreach($wcatTerms as $wcatTerm) : ?>
+            <li><a class="<?php echo $url_category = get_term_link( $wcatTerm ) ?>" href="<?php echo $url_category = get_term_link( $wcatTerm ) ?>"><?php echo $wcatTerm->name; ?></a></li>
+                 <?php  endforeach;  ?>  
+          </ul>
+        </li>
+		  <li class="nav-item">
+			  <a class="nav-link hvr-overline-nav" href="<?php bloginfo('url'); ?>/#contacto">Contacto</a>
+		  </li>
+      </ul>
+      
+     
+		<form action="<?php bloginfo('url'); ?>" method="get" class="search-form">
+                <div class="form-group has-feedback">
+                  <label for="search" class="sr-only"></label>
+                  <input type="text" class="form-control" name="s" id="search" placeholder="Busca nuestros productos">
+                  <button type="submit" class="form-control-feedback">
+                    <span class="glyphicon glyphicon-search "></span>
+                  </button>
+                </div>
+              </form>
+    </div><!-- /.navbar-collapse -->
+		</div>
       <div class="container-nav">
         <div class=" padding__general main-navbar__contentop ">
           <div class="  navbar-menu hidden-xs-down">
@@ -63,7 +111,7 @@
                 <a class="nav-link hvr-overline-nav" href="<?php bloginfo('url'); ?>/about">Nosotros</a>
               </li>
               <li class="nav-item dropdown dropdown-large">
-                <a href="#" class="dropdown-toggle nav-link hvr-overline-nav" data-toggle="dropdown">Productos</a>
+                <a href="#" class="dropdown-toggle nav-link hvr-overline-nav" data-toggle="dropdown">Categoría de Productos</a>
                 <ul class="dropdown-menu dropdown-menu-large row">
                   <li class="">
                           <?php $wcatTerms = get_terms('product_cat', array('hide_empty' => 0, 'parent' =>0)); 

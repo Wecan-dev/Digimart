@@ -1,9 +1,4 @@
-
 @media screen and (max-width: 319px) and (min-width: 0px) {
-
-  .container-social-media{
-    display: none;
-  } 
   .nav>li>a{
     padding: 10px 7px;
     font-size: 8px;
@@ -90,6 +85,7 @@
     height: 60px;
     z-index: 999;
     bottom: 0;
+	  display:none;
   }
 
   .navbar-nuevo {
@@ -128,15 +124,13 @@
   .search-form .form-group span.form-control-feedback{
     color: #000;
   }
-  .container-social-media{
-    display: none;
-  }
+  
   .logo a{
     display: flex;
     justify-content: center;
   }
   .logo img{
-    width: 70%!important;
+    width: 100%!important;
     padding-top: 10px;
   }
   .search-form .form-group:hover input.form-control{
@@ -206,7 +200,8 @@
     height: 300px;
   }
   .title-container{
-    margin-bottom: 15px;
+    margin-bottom: 3rem;
+	      margin-top: 2rem;
   }
   #contact{
     height: auto;
@@ -643,7 +638,6 @@
     display: none !important;
   }
   #description{
-    padding: 0;
   }
   nav{
     padding: 0px 0px 0px 0px;
@@ -653,8 +647,8 @@
     padding: 20px 10px;
   }
   .img-products{
-    width: 126px;
-    height: 119px;
+    width: 100%;
+    height: 200px;
   }
   .container-general-footer-logo{
     height: 115px;
@@ -738,13 +732,14 @@
 
 }
 .caption-products{
-  height: 160px;
+  height: 305px;
   margin-bottom: 50px;
   position: initial !important ;
 
 }
 .open-sans{
-  text-align: center;
+  text-align: left;
+	margin-bottom: 0rem;
 }
 .main-category__sidebar--subcategory--2{
   display: grid;
@@ -758,7 +753,7 @@
 }
 .selec-product{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 .container-logo .row{
   margin: 0px !important;
@@ -837,7 +832,7 @@
     display: none;
   }
   #description{
-    padding: 10px 0px 0 0px;
+    padding: 10px 0px 4rem 0px;
   }
   #description h3{
     display: flex;
@@ -857,16 +852,14 @@
  }
  .img-products{
 
-  height: 190px;
+	 
+  height: 200px;
 }
 .hvr-shadow-p{
   width: 100%;
 }
-.main-category__content{
-  display: grid;
-  grid-template-columns:  1fr;
-  padding-top: 30px;
-}
+
+	
 
 .main-products__grid--content{
   display: grid;
@@ -908,10 +901,7 @@
 .open-sans{
   text-align: center;
 }
-.selec-product{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
+
 .breadcrumb-nav{
   padding-top: 15px;
 }
