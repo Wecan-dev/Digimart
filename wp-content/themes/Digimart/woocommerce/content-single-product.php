@@ -17,10 +17,10 @@
 <section id="description">
    <section class="main-detalle container">
     <div class="">
-      <div class="col-lg-8 col-md-8">
+      <div class="col-lg-8 col-md-8 cuadro__imgs">
         <div class="main">
-          <div class="row">
-            <div class="col-lg-3 col-md-3 ">
+          <div>
+            <div class="col-lg-3 col-md-3 cuadro__imgs">
               <div class="propiedades slider-nav2">
                 <div><h3> <img class="img-navs" src="<?php echo get_the_post_thumbnail_url(); ?>" alt=""> </h3></div>
 				  <?php if(get_field('imagen_1')): ?>
@@ -58,7 +58,7 @@
 
               </div>
             </div>
-            <div class="columna-mostrar col-lg-9 col-md-9 ">
+            <div class="columna-mostrar col-lg-9 col-md-9 p-0">
               <div class="slider slider-for">
 				  
                 <div class="img-slider__mostrar"><h3> <img class="img-mostrar" src="<?php echo get_the_post_thumbnail_url(); ?>"> </h3></div>
@@ -107,16 +107,16 @@
       </div>
       <div class="cuadro-descripcion col-lg-4 col-md-4">
        <div class="information-producto card hvr-grow-shadow">
-        <div class="title-description">
+        <div class="title-description title-description-padd pb-0">
           <h3 class="open-sans description-p"><?php the_title(); ?></h3>
           <hr class="line-product">
         </div>
-        <div class="description-producto">
+        <div class="description-producto pt-0">
           <ul class="list-products">
 			 <li class="description" ><h3>
 				 <p><?php echo $product->get_price_html(); ?></p>
 				 </h3></li>
-           <? the_content();?>
+           <?php echo the_content();?>
           </ul>
         </div>
         <div class="product-color">
@@ -142,17 +142,17 @@
               </a>
             
               <div class="dropdown__btn dropdown-item__desktop" aria-labelledby="dropdownMenuLink">
-                <a class="" href=" <?php echo 'https://web.whatsapp.com/send?phone=5804121271277&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor de Ventas 1</a> <br>
-                <a class="" href=" <?php echo 'https://web.whatsapp.com/send?phone=5804121727855&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor de Ventas 2</a> <br>
-                <a class="" href="<?php echo 'https://web.whatsapp.com/send?phone=5804126403077&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor de Ventas 3</a> <br>
+                <a class="" href=" <?php echo 'https://web.whatsapp.com/send?phone=5804121271277&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor 1</a> <br>
+                <a class="" href=" <?php echo 'https://web.whatsapp.com/send?phone=5804121727855&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor 2</a> <br>
+                <a class="" href="<?php echo 'https://web.whatsapp.com/send?phone=5804126403077&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor 3</a> <br>
 
                 
               </div>
               <div class="dropdown__btn dropdown-item__mobile" aria-labelledby="dropdownMenuLink">
                
-              <a class="" href=" <?php echo 'https://api.whatsapp.com/send?phone=5804121271277&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor de ventas 1</a> <br>
-                <a class="" href=" <?php echo 'https://api.whatsapp.com/send?phone=5804121727855&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor de ventas 2</a> <br>
-                <a class="" href="<?php echo 'https://api.whatsapp.com/send?phone=5804126403077&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor de ventas 3</a> <br>
+              <a class="" href=" <?php echo 'https://api.whatsapp.com/send?phone=5804121271277&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor 1</a> <br>
+                <a class="" href=" <?php echo 'https://api.whatsapp.com/send?phone=5804121727855&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor 2</a> <br>
+                <a class="" href="<?php echo 'https://api.whatsapp.com/send?phone=5804126403077&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor 3</a> <br>
                 
               </div>
 
@@ -204,17 +204,17 @@
               </a>
             
               <div class="dropdown__btn dropdown-item__desktop" aria-labelledby="dropdownMenuLink">
-                <a class="" href=" <?php echo 'https://web.whatsapp.com/send?phone=5804121271277&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor de ventas 1</a> <br>
-                <a class="" href=" <?php echo 'https://web.whatsapp.com/send?phone=5804121727855&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor de ventas 2</a> <br>
-                <a class="" href="<?php echo 'https://web.whatsapp.com/send?phone=5804126403077&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor de ventas 3</a> <br>
+                <a class="" href=" <?php echo 'https://web.whatsapp.com/send?phone=5804121271277&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor 1</a> <br>
+                <a class="" href=" <?php echo 'https://web.whatsapp.com/send?phone=5804121727855&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor 2</a> <br>
+                <a class="" href="<?php echo 'https://web.whatsapp.com/send?phone=5804126403077&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor 3</a> <br>
 
                 
               </div>
               <div class="dropdown__btn dropdown-item__mobile" aria-labelledby="dropdownMenuLink">
                
-              <a class="" href=" <?php echo 'https://api.whatsapp.com/send?phone=5804121271277&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor de ventas 1</a> <br>
-                <a class="" href=" <?php echo 'https://api.whatsapp.com/send?phone=5804121727855&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor de ventas 2</a> <br>
-                <a class="" href="<?php echo 'https://api.whatsapp.com/send?phone=5804126403077&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor de ventas 3</a> <br>
+              <a class="" href=" <?php echo 'https://api.whatsapp.com/send?phone=5804121271277&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor 1</a> <br>
+                <a class="" href=" <?php echo 'https://api.whatsapp.com/send?phone=5804121727855&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor 2</a> <br>
+                <a class="" href="<?php echo 'https://api.whatsapp.com/send?phone=5804126403077&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor 3</a> <br>
                 
               </div>
 

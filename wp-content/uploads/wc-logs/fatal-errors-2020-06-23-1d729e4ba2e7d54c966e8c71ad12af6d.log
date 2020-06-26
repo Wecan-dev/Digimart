@@ -1,0 +1,11 @@
+2020-06-23T14:25:45+00:00 CRITICAL Uncaught Error: Call to undefined function content() in /var/www/html/Digimart/wp-content/themes/Digimart/woocommerce/content-single-product.php:119
+Stack trace:
+#0 /var/www/html/Digimart/wp-includes/template.php(725): require()
+#1 /var/www/html/Digimart/wp-content/plugins/woocommerce/includes/wc-core-functions.php(197): load_template('/var/www/html/D...', false)
+#2 /var/www/html/Digimart/wp-content/themes/Digimart/woocommerce/single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Digimart/wp-includes/template-loader.php(106): include('/var/www/html/D...')
+#4 /var/www/html/Digimart/wp-blog-header.php(19): require_once('/var/www/html/D...')
+#5 /var/www/html/Digimart/index.php(17): require('/var/www/html/D...')
+#6 {main}
+  thrown in /var/www/html/Digimart/wp-content/themes/Digimart/woocommerce/content-single-product.php on line 119
+

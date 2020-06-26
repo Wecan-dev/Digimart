@@ -99,10 +99,7 @@
     margin-left: 5px;
   }
 
-  .modal-dialog{
-    width: 200px;
-    height: 200px;
-  }
+ 
   .modal-header{
     width: 100%;
     height: 200px;
@@ -321,13 +318,12 @@
   }
   .slick-slide img{
     height: 300px;
+	  object-fit:contain;
   }
   .slide-carousel{
     padding: 0 0 0 0!important;
   } 
-  .description-producto{
-    height: 472px;
-  }
+  
   .img-carousel-small{
     background-size: cover;
     background-position: center;
@@ -603,12 +599,10 @@
     text-align: center;
   }
   .modal-header{
-    width: 150%;
-    height: 309px;
+    width: 100%;
+	  height:100%;
   }
-  button.close{
-    right: -100px !important;
-  }
+  
   .image-nosotros{
     width: 100%;
   }
@@ -679,9 +673,7 @@
   .description-view{
     padding-top: 30px;
   }
-  .description-producto{
-    height: 335px;
-  }
+  
   .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev{
     margin-left: 5px;
   }
@@ -759,8 +751,13 @@
   margin: 0px !important;
 }
 #nosotros{
-  padding: 0px 10px 0 10px;
+  padding: 30px 10px 0 10px;
 }
+	
+.title-description {
+    padding: 22px 10px 0 10px !important;
+}
+	
 
 }
 

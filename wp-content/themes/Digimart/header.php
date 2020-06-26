@@ -134,7 +134,7 @@
           foreach ($wsubcats as $wsc):
             ?>
                      
-                      <li><a href="sub-category.html"><?php echo $wsc->name; ?></a></li>
+                      <li><a href="<?php echo $url_category = get_term_link( $wcatTerm ) ?>"><?php echo $wsc->name; ?></a></li>
 
                       <?php  endforeach;  ?>             
                     </ul>

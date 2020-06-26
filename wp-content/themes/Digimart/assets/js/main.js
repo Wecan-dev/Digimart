@@ -223,16 +223,10 @@ $('.btn-drop').click(function(){
   $(this).siblings('.dropdown-item__mobile').addClass('visibleMobile')
 })
 
-
 $('.panel-heading--first').click(function(){
-  $('.panel-collapse').removeClass('in');
-  $(this).siblings('.collapse').toggleClass('in')
+  $('.collapse-cat').removeClass('in--cat');
+  $(this).siblings('.collapse-cat').toggleClass('in--cat');
 $('.panel-heading').removeClass('active');
   $(this).toggleClass('active')
 })
-$('.panel-heading--two').click(function(){
-  $('.collapse-close').removeClass('in--sub');
-  $(this).siblings('.collapse-close').toggleClass('in--sub')
-$('.panel-heading').removeClass('active');
-  $(this).toggleClass('active')
-})
+

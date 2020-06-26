@@ -4,6 +4,10 @@ body{
   margin: 0;
   padding: 0;
 }
+
+body.activeFixed{
+	overflow-y:hidden;
+}
 .open-sans{
   font-family: 'Open-sans', sans-serif;
   font-weight: bold;
@@ -1011,6 +1015,7 @@ input[type="number"]:focus,select:focus,.input-form:focus{
  }
  .img-mostrar{
   width: 100%;
+	     min-height: 600px;
 
 }
 .img-navs{
@@ -1036,6 +1041,7 @@ input[type="number"]:focus,select:focus,.input-form:focus{
 }
 #description .slick-slide{
   outline: none;
+	background-color: #fff;
 }
 .img-products__home{
   width: 100%;
@@ -1149,8 +1155,9 @@ input[type="number"]:focus,select:focus,.input-form:focus{
   transition: 0.3s ease-in-out;
 }
 .visibleDesktop{
-  display: block;
-  transition: 0.3s ease-in-out;
+     display: flex;
+    transition: 0.3s ease-in-out;
+        justify-content: space-around;
 }
 
 .main-bannererror{
@@ -1196,12 +1203,30 @@ h2.title-marcas{
 .product-color{
 	display:none;
 }
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media screen and (max-width: 767px) and (min-width: 0px) {
+	
+	.banner-carousel{
+		height: 50vh;
+	}
+	.cuadro-descripcion, .cuadro__imgs{
+		padding: 18px 0;
+	}
+	.cuadro__imgs{
+		padding: 0;
+	}
 	.caption-carousel h2{
 		text-align: center;
 	}
 	.description-producto {
-    padding: 0 15px !important;
+    padding: 0px !important;
 }
 	.title__products__general{
 
@@ -1342,8 +1367,10 @@ h2.title-marcas{
     transition: 0.3s ease-in-out;
   }
   .visibleMobile{
-    display: flex;
+        display: flex;
     transition: 0.3s ease-in-out;
+    justify-content: space-around;
+    padding: 10px 25px !important;
 
   }
   .dropdown-item__desktop{
@@ -1395,6 +1422,23 @@ h2.title-marcas{
 	}
 	.dropdown__btn{
 		bottom: 0px !important;
+
+	}
+	#description{
+		padding: 60px 0px 4rem 0px;
+	}
+	#description{
+		padding-top: 6rem !important;
+	}
+	.modal-dialog{
+		width:250px;
+		height:250px;
+	}
+	.home-slide{
+		padding-top: 10rem;
+	}
+	.contenedor-category:hover .parrafo-hidden{
+		display:none;
 	}
 }
 
@@ -1586,8 +1630,8 @@ h2.title-marcas{
   z-index: 9999 !important;
   background-color: #fee539;
   position: absolute;
-  bottom: -20px;
-  padding: 5px 10px;
+  bottom: 0px;
+  padding: 5px 25px;
 }
 .dropdown__btn a{
   font-family: 'Open-sans', sans-serif;
@@ -1614,9 +1658,24 @@ h2.title-marcas{
 	display:none;
 }
 
+.collapse-cat{
+	display:none;
+}
+
 .collapse-close.in--sub{
 	    display: block;
 }
+
+.collapse-cat.in--cat{
+	    display: block;
+}
+
+
+
 #description{
 	padding-bottom: 4rem;
+}
+
+.description-producto ul{
+	padding-left: 10px;
 }
